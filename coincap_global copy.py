@@ -5,7 +5,7 @@ from decouple import config
 # Replace with your actual CoinMarketCap API key
 api_key = config('COIN_API_KEY')
 currency = 'USD'
-global_url = f'https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest?convert={
+global_url = f'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest={
     currency}'
 
 # Define headers including the API key
